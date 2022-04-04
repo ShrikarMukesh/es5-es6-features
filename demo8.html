@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ES5/ES6</title>
+  </head>
+  <body>
+    <h3>Default Parameters</h3>
+    <script>
+      function findSum(a, b = 10) {
+        return a + b;
+      }
+      let result = findSum(10);
+      console.log("Sum : ", result);
+      result = findSum(10, 20);
+      console.log("Sum : ", result);
+      const sum = (a, b = 10) => {
+        return a + b;
+      };
+      result = sum(10);
+      console.log("Sum : ", result);
+      result = sum(10, 20);
+      console.log("Sum : ", result);
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

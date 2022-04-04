@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h3>Primities and References</h3>
+    <script>
+      console.log("Primities and References");
+
+      let x = 10; // X is premitive object
+      let y = x; // Y is reference variable
+      x = 55;
+      console.log(x);
+      console.log(y);
+
+      let arr1 = [1, 2, 3];
+      let arr2 = arr1;
+      arr1.push(5);
+      console.log(arr1);
+      console.log(arr2);
+
+      const arr3 = [1, 2, 3];
+      const arr4 = arr3;
+      arr3.push(55);
+      arr4.push(99);
+      console.log(arr3);
+      console.log(arr4);
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>

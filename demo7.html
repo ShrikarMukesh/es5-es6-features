@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ES5/ES6</title>
+  </head>
+  <body>
+    <h3>Arrow Functions Demo</h3>
+    <script>
+      show1 = () => {
+        console.log("I am show 1");
+      };
+      console.log("show1" + typeof show1);
+      const show2 = (x) => {
+        console.log("I am show 2", x);
+      };
+      console.log("show2" + typeof show2);
+      const findSum = (x, y) => {
+        return x + y;
+      };
+      console.log("show3" + typeof show3);
+      const substration = (x, y) => {
+        return x - y;
+      };
+      show1();
+      show2(55);
+      let sum = findSum(100, 200);
+      console.log("Sum : ", sum);
+      let subs = substration(100, 50);
+      console.log(subs);
+
+      const showStudent = (sname, email, phone) => {
+        //let msg="Name : "+sname +", Email : "+email +", Phone : "+phone;
+        let msg = `Name is ${sname} , Email is ${email} and Phone is ${phone}`;
+        console.log(typeof msg);
+        console.log(msg);
+      };
+      showStudent("Sri", "Sri@jlc", 12345);
+
+      const showArray = (arr) => {
+        for (let value of arr) {
+          console.log(value);
+        }
+      };
+      let array = [12, 45, 12, 84, 90];
+      showArray(array);
+    </script>
+  </body>
+</html>

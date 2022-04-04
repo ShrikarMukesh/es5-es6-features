@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ES5/ES6</title>
+  </head>
+  <body>
+    <h3>var and let scope</h3>
+    <script>
+      console.log("var and let ");
+      var x = 10;
+      function show() {
+        //Function Definition
+        var y = 20;
+        if (true) {
+          var z = 30;
+          console.log("Inside If- x = " + x);
+          console.log("Inside If- y = " + y);
+          console.log("Inside If- z = " + z);
+        }
+        console.log("After If- x = " + x);
+        console.log("After If- y = " + y);
+        console.log("After If- z = " + z);
+      }
+      show(); //Function Call
+      console.log("Outside show()- x = " + x);
+      //console.log("Outside show()- y = "+y);
+      //console.log("Outside show()- z = "+z);
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>
