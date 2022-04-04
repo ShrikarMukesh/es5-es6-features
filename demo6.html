@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>JSON.map</h3>
+    <script>
+      function get(x) {
+        return x;
+      }
+      function squre(x) {
+        return x * x;
+      }
+      function cube(x) {
+        return x * x * x;
+      }
+      function cubeString(x) {
+        return `cube of ${x}=>${x * x * x}`;
+      }
+      function change(x) {
+        return x + " = Hello Fruit";
+      }
+      var numArray = [1, 2, 3, 4, 5];
+      console.log(numArray);
+      let sameArray = numArray.map(get);
+      console.log(sameArray);
+      let squreArray = numArray.map(squre);
+      console.log(squreArray);
+      let cubeArray = numArray.map(cube);
+      console.log(cubeArray);
+      const fruits = ["mango", "apple", "grapes"];
+      let result = fruits.map(change);
+      console.log(result);
+      console.log("Lambda style of coding");
+      let output = numArray.map((x) => x * x);
+      console.log(output);
+      let cubeOutput = numArray.map((x) => x * x * x);
+      console.log(output);
+      let resultarr = numArray.map(cubeString);
+      console.log(resultarr);
+
+      console.log("lambda function");
+      numArray.forEach((firstArgument) => {
+        console.log(firstArgument);
+      });
+    </script>
+  </body>
+</html>

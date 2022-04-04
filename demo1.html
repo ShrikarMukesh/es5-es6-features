@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Argument Object</h3>
+    <script>
+      function show() {
+        console.log("this is function show");
+        console.log("Length : " + arguments.length);
+        // for (let i = 0; i < arguments.length; i++) {
+        //   console.log(arguments[i]);
+        // }
+        for (let myvalue of arguments) {
+          console.log(myvalue);
+        }
+      }
+      show();
+      show(10);
+      show(10, 20);
+      show(10, 20, 30);
+      console.log("Done !!!");
+      function show2() {
+        console.log("---show2()---");
+        console.log("Length : ", arguments.length);
+      }
+      function show1() {
+        console.log("---show1()---");
+        console.log("Length : ", arguments.length);
+        show2(arguments); //[10,20]
+      }
+
+      show1(10, 20);
+      console.log("Done !!!");
+    </script>
+  </body>
+</html>

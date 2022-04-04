@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>JSON.parse() Demo</h3>
+    <script>
+      let mydata =
+        '{"courseId":101, "courseName":"Java", "trainer":"Srinivas"}';
+      console.log(typeof mydata);
+      let mycourse = JSON.parse(mydata);
+      console.log(typeof mycourse);
+      console.log(mycourse.courseId);
+      console.log(mycourse.courseName);
+      console.log(mycourse.trainer);
+      //let x= "Hello Guys";
+      //let y = JSON.parse(x);
+      console.log("Done!!!");
+    </script>
+  </body>
+</html>
